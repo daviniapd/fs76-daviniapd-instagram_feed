@@ -1,0 +1,9 @@
+#home-tab, #profile-tab {
+    color: gray;
+
+}
+
+#home-tab.active, #profile-tab.active {
+    color: rgb(5, 5, 176);
+}
+
