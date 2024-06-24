@@ -9,136 +9,179 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+
+<!-- NavBar start -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #bab6c4;">
-    <div class="container">
+
+  <!-- Title navbar start -->
+    <div class="container p-1">
       <a class="navbar-brand" href="#">
         <span class="fa-solid fa-cookie" style="font-size: 25px;"></span>  
         <h3 class="d-inline-block" class="align-text-top">Codegram</h3>
       </a>
-      <ul class="nav justify-content-end">
-        <li><button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#myModal">
+  <!-- Title navbar end -->
+
+    <ul class="nav justify-content-end">
+
+    <!-- Modal start -->
+      <li>
+        <button type="button" class="btn btn-success mx-2" data-bs-toggle="modal" data-bs-target="#myModal">
           Create a new post
         </button>
-        </li>
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header d-flex justify-content-between p-3">
-                <h5 class="modal-title" id="myModalLabel">Create a new post</h5>
-                <button type="button" class="btn btn-outline-secondary border-0" class="close" data-bs-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true" style="font-size: 30px;">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="message-text" class="col-form-label">Caption:</label>
-                    <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
-                  </div>
-                </form>
-                <button type="button" class="btn btn-outline-dark my-2 r-2">
-                  <span class="fa-solid fa-camera"></span>
-                </button>
-                <button type="button" class="btn btn-outline-dark my-2 r-2">
-                  <span class="fa-solid fa-location-dot"></span>
-                </button>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success">Publish</button>
-              </div>
+      </li>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header d-flex justify-content-between p-3">
+              <h5 class="modal-title" id="myModalLabel">Create a new post</h5>
+              <button type="button" class="btn btn-outline-secondary border-0" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" style="font-size: 30px;">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Caption:</label>
+                  <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                </div>
+              </form>
+              <button type="button" class="btn btn-outline-dark my-2 r-2">
+                <span class="fa-solid fa-camera"></span>
+              </button>
+              <button type="button" class="btn btn-outline-dark my-2 r-2">
+                <span class="fa-solid fa-location-dot"></span>
+              </button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
             </div>
           </div>
         </div>
-        <li class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-gear"></i>
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><a class="dropdown-item" href="#">Accesibility</a></li>
-            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-          </ul>
-        </li>
-        </div>
-      </ul>
+      </div>
+    <!-- Modal end -->
+
+    <!-- Dropdown start -->
+      <li class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
+      </li>
+    <!-- Dropdown end -->
+    </ul>
     </div>
   </nav>
-  <div class="container p-3">
-        <div class="row g-2">
-          <div class="col-4">
-            <img src="images/post1.png"  class="img-fluid my-1" alt="Gamer chair collage">
-            <img src="images/post4.png"  class="img-fluid my-1" alt="A psychedelic drawing of a person">
-            <img src="images/post7.png" class="img-fluid my-1" alt="Woman looking at a lake">
-          </div>
-          <div class="col-4">
-            <img src="images/post2.png" class="img-fluid my-1" alt="A skull on a computer screen">
-            <img src="images/post5.jpg" class="img-fluid my-1" alt="Robot and Balloon">
-            <img src="images/post8.png" class="img-fluid my-1" alt="A drawing of a person using pc">
-          </div>
-          <div class="col-4">
-            <img src="images/post3.png" class="img-fluid my-1" alt="A woman using a computer">
-            <img src="images/post6.jpg" class="img-fluid my-1" alt="Person with wires on head">
-            <img src="images/post9.png" class="img-fluid my-1" alt="Drawing psychedelic">
-          </div>
-        </div>
-  </div>
+  <!-- NavBar end -->
 
+  <!-- NavTab start -->
+    <nav class="nav-tab">
+      <ul class="nav nav-tabs mt-3 justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+            <i class="fa-solid fa-table-cells"></i>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+            <i class="fa-solid fa-square"></i>
+          </button>
+        </li>
+      </ul>
 
-  <div class="container p-3">
-    <div class="row d-flex justify-content-center">
-      <div class="col-6 border border-2 rounded p-0">
-        <div class="header d-flex justify-content-between p-3">
-          <h3>Game of Thrones</h3>
-          <p>10/06</p>
+    <div class="tab-content" id="myTabContent">
+
+    <!-- Gallery start -->
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+         <div class="container p-1">
+            <div class="row g-2">
+               <div class="col-4">
+                <img src="images/post1.png"  class="img-fluid my-1" alt="Gamer chair collage">
+                <img src="images/post4.png"  class="img-fluid my-1" alt="A psychedelic drawing of a person">
+                <img src="images/post7.png"  class="img-fluid my-1" alt="Woman looking at a lake">
+              </div>
+              <div class="col-4">
+                <img src="images/post2.png" class="img-fluid my-1" alt="A skull on a computer screen">
+                <img src="images/post5.jpg" class="img-fluid my-1" alt="Robot and Balloon">
+                <img src="images/post8.png" class="img-fluid my-1" alt="A drawing of a person using pc">
+              </div>
+              <div class="col-4">
+               <img src="images/post3.png" class="img-fluid my-1" alt="A woman using a computer">
+               <img src="images/post6.jpg" class="img-fluid my-1" alt="Person with wires on head">
+               <img src="images/post9.png" class="img-fluid my-1" alt="Drawing psychedelic">
+              </div>
+            </div>
+         </div>
+       </div>
+
+    <!-- Feed start -->
+     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="container p-3">
+          <div class="row d-flex justify-content-center">
+            <div class="col-6 border border-2 rounded p-0">
+              <div class="header d-flex justify-content-between p-3">
+                <h3>Game of Thrones</h3>
+                <p>10/06</p>
+              </div>
+              <div class="imagen">
+                <img src="images/post1.png" class="img-fluid m-0" alt="Gamer chair collage">
+              </div>
+              <div class="body p-3">
+                <p class="likes">Liked by <b>corsair</b>, <b>razer</b>, <b>ikea</b> and <b>50,000 others</b></p>
+                  Once you start coding, you won't be able to stop. So I'm going to give you some advice: Choose a good throne <span class="text-primary">#forthefuture #gameofthrones</span>
+                </p>
+              </div>
+            </div>
+         </div>
+       </div>
+       <div class="container p-3">
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 border border-2 rounded p-0">
+            <div class="header d-flex justify-content-between p-3">
+              <h3>You are not alone</h3>
+              <p>24/09</p>
+            </div>
+            <div class="imagen">
+              <img src="images/post2.png" class="img-fluid m-0" alt="A skull on a computer screen">
+            </div>
+            <div class="body p-3">
+              <p class="likes">Liked by <b>4geeksacademy</b>, <b>mentalhealthfoundation</b>, and <b>80,000 others</b></p>
+                It is normal to feel frustrated while coding. Don't give up <span class="text-primary">#youarenotalone></span>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="imagen">
-          <img src="images/post1.png" class="img-fluid m-0" alt="Gamer chair collage">
-        </div>
-        <div class="body p-3">
-          <p class="likes">Liked by <b>corsair</b>, <b>razer</b>, <b>ikea</b> and <b>50,000 others</b></p>
-          Once you start coding, you won't be able to stop. So I'm going to give you some advice: Choose a good throne <span class="text-primary">#forthefuture #gameofthrones</span></p>
+      </div>
+      <div class="container p-3">
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 border border-2 rounded p-0">
+            <div class="header d-flex justify-content-between p-3">
+              <h3>Coding like a woman</h3>
+              <p>11/11</p>
+            </div>
+            <div class="imagen">
+              <img src="images/post3.png" class="img-fluid m-0" alt="A woman using a computer">
+            </div>
+            <div class="body p-3">
+              <p class="likes"><b>68.322 likes</b></p>
+                "For most a history, Anonymous was a woman" <span class="text-primary">#VirginiaWoolf #womencoding</span>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  <!-- Feed end -->
+   
   </div>
-  <div class="container p-3">
-    <div class="row d-flex justify-content-center">
-      <div class="col-6 border border-2 rounded p-0">
-        <div class="header d-flex justify-content-between p-3">
-          <h3>You are not alone</h3>
-          <p>24/09</p>
-        </div>
-        <div class="imagen">
-          <img src="images/post2.png" class="img-fluid m-0" alt="A skull on a computer screen">
-        </div>
-        <div class="body p-3">
-          <p class="likes">Liked by <b>4geeksacademy</b>, <b>mentalhealthfoundation</b>, and <b>80,000 others</b></p>
-          It is normal to feel frustrated while coding. Don't give up <span class="text-primary">#youarenotalone></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container p-3">
-    <div class="row d-flex justify-content-center">
-      <div class="col-6 border border-2 rounded p-0">
-        <div class="header d-flex justify-content-between p-3">
-          <h3>Coding like a woman</h3>
-          <p>11/11</p>
-        </div>
-        <div class="imagen">
-          <img src="images/post3.png" class="img-fluid m-0" alt="A woman using a computer">
-        </div>
-        <div class="body p-3">
-          <p class="likes"><b>68.322 likes</b></p>
-          "For most a history, Anonymous was a woman" <span class="text-primary">#VirginiaWoolf #womencoding</span></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+</nav>
+<!-- NavTab end -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
